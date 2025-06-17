@@ -36,8 +36,9 @@ h2 {
 
 .contact-item strong {
   color: #007bff;
+
   margin-right: 10px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .contact-item span {
@@ -47,7 +48,16 @@ h2 {
   transition: color 0.3s ease;
 }
 
- 
+ .mypara{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  color: red;
+  font: bolder;
+  font-size: 20px;
+  margin: 10px auto;
+  align-items: center;
+ }
 
 .contact-item span:hover {
   color: #ff0000;
@@ -57,4 +67,26 @@ h2 {
 .contact-item .del{
   font-size: 35px;
   color: red;
+}
+
+@media (max-width: 450px) {
+  h2 {
+    font-size: 15px;
+  }
+  
+  .contact-item strong {
+    font-size: 15px;
+  }
+  
+  .contact-item span {
+    font-size: 15px;
+  }
+  
+  .contact-item .del {
+    font-size: 30px;
+  }
+  .details{
+    display: flex;
+    flex-direction: column;
+  }
 }
