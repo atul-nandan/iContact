@@ -10,8 +10,8 @@ const List = ({ contactlist, removeitem }) => {
         <div className="contact-list">
           {contactlist.map((contact) => (
             <div key={contact.id} className="contact-item">
-              <div>
-                <strong>{contact.data.name}</strong> <span className="email">{contact.data.email}</span> <span> {contact.data.contact}</span>
+              <div className="details">
+                <strong>{contact.data.name}</strong> <span> {contact.data.contact}</span> <span className="email">{contact.data.email}</span>
               </div>
               <span className="del" onClick={() => removeitem(contact.id)}>
                 <MdDelete />
@@ -20,7 +20,7 @@ const List = ({ contactlist, removeitem }) => {
           ))}
         </div>
       ) : (
-        <p>No contacts available</p>
+        <p className="mypara">No contacts available</p>
       )}
 
     </div>
